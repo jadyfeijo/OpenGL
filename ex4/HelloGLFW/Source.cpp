@@ -19,7 +19,7 @@ typedef struct {
 
 	float xs, ys, xt, yt;
 	float r, g, b;
-
+	bool change;
 }Parametros;
 
 Shape shape; //objeto da classe shape
@@ -52,7 +52,6 @@ bool change = false;
 bool triangulo = false;
 bool quadrado = false;
 
-
 int width, height;
 float ratio;
 
@@ -60,12 +59,12 @@ float ratio;
 
 float randonEscala() {
 
-	return rand() % 10;
+	return rand() % 5;
 }
 
 float randonPosic() {
 
-	return rand() % 10 - 5;
+	return rand() %20- 10;
 
 }
 
@@ -85,23 +84,23 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 		glfwSetWindowShouldClose(window, GL_TRUE);
 	if (key == GLFW_KEY_Q && action == GLFW_PRESS)
 	{
-		quadrado = true;
-		quad.xs = randonEscala();
-		quad.ys = randonEscala();
-		quad.xt = randonPosic();
-		quad.yt = randonPosic();
+			quadrado = true;
+			quad.xs = randonEscala();
+			quad.ys = randonEscala();
+			quad.xt = randonPosic();
+			quad.yt = randonPosic();
 		
 
 	}
 	if (key == GLFW_KEY_T && action == GLFW_PRESS)
 	{
-		triangulo=true;
-
-		triang.xs = randonEscala();
-		triang.ys = randonEscala();
-		triang.xt = randonPosic();
-		triang.yt = randonPosic();
-
+		
+			triangulo = true;
+			triang.xs = randonEscala();
+			triang.ys = randonEscala();
+			triang.xt = randonPosic();
+			triang.yt = randonPosic();
+		
 
 	}
 	if (key == GLFW_KEY_C && action == GLFW_PRESS)
@@ -153,21 +152,26 @@ void desenhar(int op)
 {
 	switch (op) {
 	case 1:
-		glScalef(triang.xs, triang.ys, 1);
+	
+		
+		//glScalef(triang.xs, triang.ys, 1);
 
-		glTranslatef(triang.xt, triang.yt, 0);
+		//glTranslatef(triang.xt, triang.yt, 0);
 
-		shape.DrawTriangle(triang.r, triang.g, triang.b);
+		//printf("%d %d",triang.xs,triang.ys);
+
+		shape.DrawTriangle(triang.r, triang.g, triang.b, triang.xt, triang.yt, triang.xs, triang.ys);
 
 
 		break;
 
 	case 2:
-		glScalef(quad.xs, quad.ys, 1);
 
-		glTranslatef(quad.xt, quad.yt, 0);
+	//	glScalef(quad.xs, quad.ys, 1);
 
-		shape.desenhaQuadrado(quad.r, quad.g, quad.b);
+	//	glTranslatef(quad.xt, quad.yt, 0);
+
+		shape.desenhaQuadrado(quad.r, quad.g, quad.b, quad.xt, quad.yt, quad.xs, quad.ys);
 		break;
 	}
 }
@@ -226,7 +230,6 @@ int main(void)
 		if (triangulo)
 		{
 			desenhar(1);
-
 		}
 
 		if (quadrado)

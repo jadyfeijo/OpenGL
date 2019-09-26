@@ -1,9 +1,39 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ex3.vcxproj, HelloGLFW.vcxproj, Planta.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Source.cpp
-C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\HelloGLFW\Shapes.h(7,25): warning C4305:  'inicializando': truncamento de 'double' para 'float'
-C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\HelloGLFW\Source.cpp(63,16): warning C4244:  'return': conversão de 'int' para 'float', possível perda de dados
-C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\HelloGLFW\Source.cpp(68,21): warning C4244:  'return': conversão de 'int' para 'float', possível perda de dados
-C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\HelloGLFW\Source.cpp(75,23): warning C4244:  'return': conversão de 'double' para 'float', possível perda de dados
-C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\HelloGLFW\Source.cpp(81,6): warning C4101:  'i': variável local não referenciada
-C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\HelloGLFW\Source.cpp(180,12): warning C4244:  'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
-  HelloGLFW.vcxproj -> C:\Users\jadyf\Documents\OpenGL\ex3 - Copia\Debug\ex4.exe
+  Shapes.cpp
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.h(7,25): warning C4305:  'inicializando': truncamento de 'double' para 'float'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(28,11): warning C4244:  'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(29,11): warning C4244:  'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(30,11): warning C4244:  'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(90,34): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(90,22): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(91,39): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(91,24): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(92,39): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(92,24): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(105,22): warning C4244:  'argumento': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(215,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(330,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(374,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(381,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(446,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(548,23): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(556,24): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(578,24): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(590,23): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(600,24): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(612,23): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(631,23): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(638,24): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(652,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(665,28): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(674,25): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(691,28): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(699,28): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(703,19): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(704,19): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(711,21): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(726,28): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(764,28): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(773,27): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+C:\Users\jadyf\Documents\OpenGL\ex4\HelloGLFW\Shapes.cpp(780,28): warning C4305:  'argumento': truncamento de 'double' para 'GLfloat'
+  HelloGLFW.vcxproj -> C:\Users\jadyf\Documents\OpenGL\ex4\Debug\ex4.exe
