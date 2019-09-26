@@ -8,7 +8,7 @@ const float Pi = 3.14159;
 
 //Coordenadas da janela do mundo (Ortho2D)
 const float Xmin = -20;
-const float Xmax = 20;
+const float Xmax = 25;
 const float Ymin = -20.0;
 const float Ymax = 20;
 
@@ -31,15 +31,8 @@ public:
 	void DesenhaCami();
 	void DesenhaHeli();
 	void DesenhaGato();
-	void desenhaPlanta();
-	void desenhaCama();
-	void desenhaArm();
-	void desenhaMPC();
-	void desenhaTV();
-	void desenhaSofa();
-	void desenhaMesa();
-	void desenhaTapete();
-	void desenhaTeste();
+	void DesenhaGatoLinha();
+
 	void desenhaQuadrado(float r, float g, float b, float xt, float yt, float xs, float ys);
 
 

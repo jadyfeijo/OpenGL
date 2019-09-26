@@ -79,20 +79,19 @@ void Shape::DrawCircle(float posX, float posY, float radius, float nPoints)
 
 
 
-void Shape::DrawTriangle(float r, float g, float b)
+void Shape::DrawTriangle(float r, float g, float b, float xt, float yt, float xs, float ys)
 
 {
 	glColor3f(r, g, b);
 
 
 	glBegin(GL_TRIANGLES);
-		
-		glVertex2f(-0.5,-0.5);
-		glVertex3f( 0.0, 0.5,0);
-		glVertex3f( 0.5,-0.5,0);
+
+	glVertex2f(-0.5 * xs + xt, -0.5 * ys + yt);
+	glVertex3f(0.0 * xs + xt, 0.5 * ys + yt, 0);
+	glVertex3f(0.5 * xs + xt, -0.5 * ys + yt, 0);
 	glEnd();
 }
-
 void Shape::DrawT1()
 {
 

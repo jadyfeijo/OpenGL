@@ -52,14 +52,19 @@ float ratio;
 
 
 
-int randonEscala() {
+float randonEscala() {
 
-	return rand() % 10;
+	float escala;
+	do {
+		escala = rand() % 10;
+	} while (escala == 0);
+
+	return escala;
 }
 
-int randonPosic() {
+float randonPosic() {
 
-	return rand() % 10 - 5;
+	return rand() % 20 - 10;
 
 }
 
@@ -178,15 +183,15 @@ int main(void)
 
 		if (escalar)
 		{
-			glScalef(xs, ys, 1);
+			//glScalef(xs, ys, 1);
 
-			glTranslatef(xt, yt, 0);
+			//glTranslatef(xt, yt, 0);
 
-			shape.DrawTriangle(r,g,b);
+			shape.DrawTriangle(r,g,b, xt, yt, xs, ys);
 
-			glScalef(-xs, -ys, 1);
+			//glScalef(-xs, -ys, 1);
 
-			glTranslatef(-xt, -yt, 0);
+			//glTranslatef(-xt, -yt, 0);
 
 		}
 

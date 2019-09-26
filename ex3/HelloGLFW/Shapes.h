@@ -21,7 +21,7 @@ public:
 	Shape() {}
 	~Shape() {}
 	void DrawCircle(float posX, float posY, float radius, float nPoints);
-	void DrawTriangle(float r, float g, float b);
+	void Shape::DrawTriangle(float r, float g, float b, float xt, float yt, float xs, float ys);
 	void DrawT1();
 	void DrawT2();
 	void DrawT3();

@@ -502,289 +502,109 @@ void Shape::DesenhaGato() {
 	glEnd();
 }
 
-void Shape::desenhaPlanta()
+void Shape::DesenhaGatoLinha() {
+	
+	glColor3f(0.0, 1.0, 0.0);
 
-{
+	glBegin(GL_LINE_LOOP); //Corpo
+	glVertex2f(11, 8);
+	glVertex2f(16, 8);
+	glVertex2f(16, 1);
+	glVertex2f(11, 1);
+	glEnd();
+
 	glColor3f(0.0, 0.0, 0.0);
 
-	glBegin(GL_LINE_STRIP);
-	glVertex2f(18, 14);
-	glVertex2f(25, 14);
-	glVertex2f(25, 0);
-	glVertex2f(0, 0);
-	glVertex2f(0, 14);
-	glVertex2f(8, 14);
-
+	glBegin(GL_LINE_LOOP); // OlhoE
+	glVertex2f(12, 13);
+	glVertex2f(13, 13);
+	glVertex2f(13, 11);
+	glVertex2f(12, 11);
 	glEnd();
+	glBegin(GL_LINE_LOOP); // OlhoD
 
-	glBegin(GL_LINES);
-	glVertex2f(13, 14);
-	glVertex2f(13, 0);
+	glVertex2f(14, 13);
+	glVertex2f(15, 13);
+	glVertex2f(15, 11);
+	glVertex2f(14, 11);
 	glEnd();
+	glBegin(GL_LINE_LOOP); // PeE
 
-	
-	glBegin(GL_LINE_STRIP);
-
-	glVertex2f(6, 14);
-	glVertex2f(6, 24);
-	glVertex2f(21, 24);
-	glVertex2f(21, 19);
-	
+	glVertex2f(10, 3);
+	glVertex2f(11, 3);
+	glVertex2f(11, 1);
+	glVertex2f(10, 1);
 	glEnd();
+	glBegin(GL_LINE_LOOP); // PeD
 
-	glBegin(GL_LINE_STRIP);
-	glVertex2f(21, 24);
-	glVertex2f(21, 35);
-	glVertex2f(35, 35);
-	glVertex2f(35, 9);
-	glVertex2f(25, 9);
 
+	glVertex2f(16, 3);
+	glVertex2f(17, 3);
+	glVertex2f(17, 1);
+	glVertex2f(16, 1);
 	glEnd();
-}
+	glColor3f(0.0, 0.3, 0.0);
 
-void Shape::desenhaCama()
-{
-
-	glColor3f(0.8, 0.92,1);
-
-	glBegin(GL_QUADS);
-	glVertex2f(0, 9);
-	glVertex2f(6, 9);
-	glVertex2f(6, 0);
-	glVertex2f(0, 0);
-
-	glColor3f(1, 0.95, 0.9);
-	glVertex2f(0, 9);
-	glVertex2f(6, 9);
-	glVertex2f(5, 7);
-	glVertex2f(0, 7);
-
-	glEnd();
-
-	glColor3f(1, 1, 1);
-
-	glBegin(GL_LINES);
-	glVertex2f(1, 0);
-	glVertex2f(1, 7);
-	glVertex2f(2, 0);
-	glVertex2f(2, 7);
-	glVertex2f(3, 0);
-	glVertex2f(3, 7);
-	glVertex2f(4, 0);
-	glVertex2f(4, 7);
-	glVertex2f(5, 0);
-	glVertex2f(5, 7);
-
-	glColor3f(0.8, 0.92, 1);
-	glVertex2f(6, 9);
-	glVertex2f(0, 9);
-	glVertex2f(0, 9);
-	glVertex2f(0, 0);
-
-	glEnd();
-
-
-}
-
-void Shape::desenhaArm() {
-	glColor3f(0.6, 0.3, 0);
-
-
-	glBegin(GL_QUADS);
-	glVertex2f(0, 0);
-	glVertex2f(0, 4);
-	glVertex2f(12, 4);
-	glVertex2f(12, 0);
-	glEnd();
-
-	glColor3f(0.3, 0.14, 0);
-
-	glBegin(GL_LINES);
-	glVertex2f(4, 0);
-	glVertex2f(4, 4);
-	glVertex2f(8, 0);
-	glVertex2f(8, 4);
-	glEnd();
-	
-}
-
-void Shape::desenhaMPC() {
-	glColor3f(1,0.65, 0.3);
-
-
-	glBegin(GL_QUADS);
-	glVertex2f(0, 2);
-	glVertex2f(0, 6);
-	glVertex2f(8, 6);
-	glVertex2f(8, 2);
-
-	glVertex2f(8, 6);
-	glVertex2f(10, 6);
-	glVertex2f(10, 0);
-	glVertex2f(8, 2);
-
-	glVertex2f(10, 6);
-	glVertex2f(15, 6);
-	glVertex2f(15, 0);
-	glVertex2f(10, 0);
-
-	glColor3f(1, 0.8, 0.8);
+	glBegin(GL_LINE_LOOP); // PernaE
 
 	glVertex2f(11, 5);
 	glVertex2f(13, 5);
-	glVertex2f(13, 2);
-	glVertex2f(11, 2);
-
-	glColor3f(0.85, 1, 0.8);
-
-	glVertex2f(12, 4);
-	glVertex2f(14, 4);
-	glVertex2f(14, 1);
-	glVertex2f(12, 1);
-
-	glColor3f(0, 0, 0);
-
-	glVertex2f(2, 2);
-	glVertex2f(5, 2);
-	glVertex2f(5, 1);
-	glVertex2f(2, 1);
-
-	glColor3f(0.3, 0.3, 0.3);
-
-	glVertex2f(2, 0);
-	glVertex2f(5, 0);
-	glVertex2f(5, 1);
-	glVertex2f(2, 1);
-
-	glEnd();
-
-}
-
-void Shape::desenhaTV() {
-
-	glColor3f(0.48, 0.25, 0.01);
-
-
-	glBegin(GL_QUADS);
-	glVertex2f(0, 0);
-	glVertex2f(0, 7);
-	glVertex2f(2.5, 7);
-	glVertex2f(2.5, 0);
-
-	glColor3f(0.3, 0.3, 0.3);
-	glVertex2f(2, 6);
-	glVertex2f(2, 1);
-	glVertex2f(0.5, 2);
-	glVertex2f(0.5, 5);
-
-	glColor3f(0, 0, 0);
-	glVertex2f(2, 6);
-	glVertex2f(3, 6);
-	glVertex2f(3, 1);
-	glVertex2f(2, 1);
-
-	glEnd();
-}
-
-void Shape::desenhaSofa() {
-
-	glColor3f(0.97, 0.02, 0.02);
-	glBegin(GL_QUADS);
-
-	glVertex2f(0, 0);
-	glVertex2f(0, 5);
-	glVertex2f(5, 5);
-	glVertex2f(5, 0);
-
-	glColor3f(0.48, 0.01, 0.01);
-
-	glVertex2f(0, 5);
-	glVertex2f(5, 5);
-	glVertex2f(4.7, 3);
-	glVertex2f(0.3, 3);
-
-	glEnd();
-}
-
-void Shape::desenhaMesa() {
-
-	glColor3f(0.9, 1, 1);
-
-	glBegin(GL_POLYGON);
-	glVertex2f(2, 3);
-	glVertex2f(2, 6);
-	glVertex2f(3, 7);
-	glVertex2f(12, 7);
-	glVertex2f(13, 6);
-	glVertex2f(13, 3);
-	glVertex2f(12, 2);
-	glVertex2f(3, 2);
-	glEnd();
-
-	glBegin(GL_QUADS);
-
-	glColor3f(0.72, 0.27, 0.72);
-
-	glVertex2f(4, 7);
-	glVertex2f(6, 7);
-	glVertex2f(6, 8);
-	glVertex2f(4, 8);
-
-	glVertex2f(9, 7);
-	glVertex2f(11, 7);
-	glVertex2f(11, 8);
-	glVertex2f(9, 8);
-
-	glVertex2f(13, 5.5);
-	glVertex2f(14, 5.5);
-	glVertex2f(14, 3.5);
-	glVertex2f(13, 3.5);
-
-	glVertex2f(9, 2);
-	glVertex2f(11, 2);
+	glVertex2f(13, 1);
 	glVertex2f(11, 1);
-	glVertex2f(9, 1);
+	glEnd();
 
-	glVertex2f(4, 2);
-	glVertex2f(6, 2);
-	glVertex2f(6, 1);
-	glVertex2f(4, 1);
+	glBegin(GL_LINE_LOOP); // PernaD
 
-	glVertex2f(1, 5.5);
-	glVertex2f(2, 5.5);
-	glVertex2f(2, 3.5);
-	glVertex2f(1, 3.5);
+
+	glVertex2f(14, 5);
+	glVertex2f(16, 5);
+	glVertex2f(16, 1);
+	glVertex2f(14, 1);
 
 	glEnd();
 
-}
+	glColor3f(0.0, 0.0, 0.0);
 
-void Shape::desenhaTapete() {
+	glBegin(GL_LINE_LOOP); // Naris
+	glVertex2f(12.5, 10);
+	glVertex2f(14.5, 10);
+	glVertex2f(13.5, 9);
+	glEnd();
 
-	glColor3f(0.27, 0.27, 0.72);
+	glBegin(GL_LINE_LOOP); // OrelhaE
 
-	glBegin(GL_QUADS);
-
-	glVertex2f(0, 0);
-	glVertex2f(0, 9);
-	glVertex2f(9, 9);
-	glVertex2f(9, 0);
-
-	glColor3f(0.27, 0.5, 0.72);
-
-	glVertex2f(1, 1);
-	glVertex2f(1, 8);
-	glVertex2f(8, 8);
-	glVertex2f(8, 1);
-
-	glColor3f(0.27, 0.72, 0.72);
-
-	glVertex2f(2, 2);
-	glVertex2f(2, 7);
-	glVertex2f(7, 7);
-	glVertex2f(7, 2);
-
+	glVertex2f(11, 17);
+	glVertex2f(13, 14);
+	glVertex2f(11, 14);
 	glEnd();
 
 
+	glBegin(GL_LINE_LOOP); // OrelhaD
+
+	glVertex2f(16, 17);
+	glVertex2f(16, 14);
+	glVertex2f(14, 14);
+
+	glEnd();
+	
+	glBegin(GL_LINE_LOOP); //Cabeça
+	glVertex2f(11, 14);
+	glVertex2f(16, 14);
+	glVertex2f(19, 11);
+	glVertex2f(16, 8);
+	glVertex2f(11, 8);
+	glVertex2f(8, 11);
+	glVertex2f(11, 14);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//Rabo
+
+	glVertex2f(16, 4.5);
+	glVertex2f(21, 4.5);
+	glVertex2f(22, 2.5);
+	glVertex2f(21, 1.5);
+	glVertex2f(20, 3.5);
+	glVertex2f(16, 3.5);
+
+	glEnd();
 }

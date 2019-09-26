@@ -59,14 +59,20 @@ float ratio;
 
 float randonEscala() {
 
-	return rand() % 5;
+	float escala;
+	do {
+		escala = rand() % 10;
+	} while (escala == 0);
+
+	return escala;
 }
 
 float randonPosic() {
 
-	return rand() %20- 10;
+	return rand() % 20 - 10;
 
 }
+
 
 float randonColor() {
 
@@ -176,6 +182,18 @@ void desenhar(int op)
 	}
 }
 
+void duasViewports(int w, int h)
+{
+	glViewport(0, 0, w / 2, h);
+
+	shape.DesenhaGatoLinha();
+
+
+
+	//Definindo uma viewport que vai da metade da janela, até o fim (na largura)
+	glViewport(w / 2, 0, w / 2, h);
+	shape.DesenhaGato();
+}
 
 
 // Programa Principal 
@@ -227,16 +245,14 @@ int main(void)
 		glMatrixMode(GL_MODELVIEW);
 		glLoadIdentity();
 
+		//duasViewports(width, height);
+
 		if (triangulo)
-		{
 			desenhar(1);
-		}
 
 		if (quadrado)
-		{
 			desenhar(2);
-
-		}
+			
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
